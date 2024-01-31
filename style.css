@@ -4,8 +4,14 @@ li {
 
 .first-list {
     background-color: blue;
+    height: 32vh;
+    width: 40vw;
+    margin: 10px auto;
 }
 
 .second-list {
     background-color: darkred;
+    height: 40vh;
+    width: 50vw;
+    margin: 20px auto;
 }
