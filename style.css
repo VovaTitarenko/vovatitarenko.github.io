@@ -1,4 +1,11 @@
 li {
     color: yellow;
+}
+
+.first-list {
     background-color: blue;
+}
+
+.second-list {
+    background-color: darkred;
 }
