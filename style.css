@@ -15,6 +15,10 @@ html, body {
 overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 .marko-tennis {
 position: relative;
 top: 0;
