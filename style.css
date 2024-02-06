@@ -117,14 +117,10 @@ color: white;
 border-radius: 50%; */
 }
 
-/* .marko-tennis i {
-border: 2px solid pink;
-} */
-
 /*розовые границы div*/
-/* .marko-tennis div, header {
+.marko-tennis div, header {
 border: 2px solid pink;
-} */
+}
 
 .marko-tennis .marko-main {
 position: relative;
