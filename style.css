@@ -8,7 +8,7 @@
 }
 
 html {
-background-color: #000;
+background-color: #012619;
 }
 
 html, body {
@@ -65,6 +65,11 @@ z-index: 100;
 /* font-weight: 600; */
 color: white;
 text-decoration: underline;
+text-shadow: 1px 1px 0px #000, 0px 0px 5px #000; 
+}
+
+.marko-tennis i:hover {
+color: white;
 text-shadow: 1px 1px 0px #000, 0px 0px 5px #000; 
 }
 
@@ -191,8 +196,10 @@ background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 border-radius: 20px;
-border: rgba(255, 255, 255, 0.18);
-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+border: rgba(255, 255, 255, 0.5);
+border-right: rgba(255, 255, 255, 0.2);
+border-bottom: rgba(255, 255, 255, 0.2);
+box-shadow: 0 25px 45px 0 rgba(0, 0, 0, 0.2);
 z-index: 0;
 }
 
