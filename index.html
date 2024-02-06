@@ -1,34 +1,330 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <title>Emmet</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="first-list">
-    <ul>
-        <li>"Вова"</li>
-        <li>"Вова"</li>
-        <li>"Вова"</li>
-    </ul>
-    </div>
-    <main>
-        <h1>Экспериментальная страничка про Emmet</h1>
-        <div class="second-list">
-        <ul>
-            <li class="list-item" id="item-01">Быстрый</li>
-            <li class="list-item" id="item-02">Удобный</li>
-            <li class="list-item" id="item-03">Крутой</li>
-            <li class="list-item" id="item-04">Красивый</li>
-            <li class="list-item" id="item-05">Умный</li>
-        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marko Tennis</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Marko - Professional tennis coach from Belgrade"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!--
+        manifest.json provides metadata used when your web app is installed on a
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        -->
+        <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+        <div class='marko-tennis'>
+          <div class="bg-wrapper">
+            <div class='blur-filter'></div>
+          </div>
+          <header>
+            <div id="logo-n-slogan">
+              <div class="logo" id="logo">
+                <p>MARKO</p>
+              </div>
+              <div class="ball-separator">
+                  <div class='sm-ball-wrapper'>
+                    <img width="20" height="20" src="https://i.imgur.com/ErWt8Zy.png" alt="tennis ball"/>
+                  </div>
+              </div>
+              <div class="slogan">
+                  <p>make tennis your passion</p>
+              </div>
+            </div>
+            <div>
+              <nav>
+                <div class="nav-item"><a href="#about"><span>about</span></a></div>
+                <div class="nav-item"><a href="#trainings"><span>trainings</span></a></div>
+                <div class="nav-item"><a href="#reviews"><span>reviews</span></a></div>
+                <div class="nav-item"><a href="#gallery"><span>gallery</span></a></div>
+                <div class="nav-item">
+                  <div class='icon-wrapper' id="whatsapp-icon">
+                    <a href="" target="_blank" title="Marko on WhatsApp">
+                      <i class="fa fa-brands fa-whatsapp fa-xl"></i>
+                    </a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <div class='marko-main'>
+            <div class="marko-content flex flex-col">
+              <!-- <div class='marko-main-block' id="home">
+                <div class="block-subtitle">
+                  
+                </div>
+                <div class='block-content'>
+                  <p>best tennis practive from the homeland of Novak</p>
+                  <div class='block1-img-wrapper'>
+                    <img class='img-circle' width="380" height="380" src="https://i.imgur.com/P1EyKJZ.jpeg"></img>
+                  </div>
+                </div>
+              </div> -->
+              <hr id="about"></hr>
+              <div class='marko-main-block' id="block-2">
+                <div class="block-subtitle">
+                  <img class="subtitle-bg" height="120" width="600" src="https://i.imgur.com/Za7U9GW.png" alt="Brush Stroke Png"></img>
+                  <div class='subtitle-text'>
+                    <p>about</p>
+                  </div>
+                </div>
+                <div class='block-content'>
+                  <p>Hi! My name is Marko.</p>
+                  <p>I am a pro-level tennis coach and former ATP player, based in Belgrade, Serbia, with 30 years of experience. I can help you take up the sport and win tournaments.</p>
+                  <div class='block1-img-wrapper'>
+                    <img class='img-circle' width="380" height="380" src="https://i.imgur.com/GDOTjOU.jpeg"></img>
+                  </div>
+                </div>
+              </div>
+              <hr id="trainings"></hr>
+              <div class='marko-main-block' id="block-3">
+                <div class="block-subtitle">
+                  <img class="subtitle-bg" height="120" width="600" src="https://i.imgur.com/Za7U9GW.png" alt="Brush Stroke Png"></img>
+                  <div class='subtitle-text'>
+                    <p>trainings</p>
+                  </div>
+                </div>
+                <div class='block-content'>
+                  <p>The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate 
+styles.</p>
+                </div>
+              </div>
+              <hr id="reviews"></hr>
+              <div class='marko-main-block' id="block-4">
+                <div class="block-subtitle">
+                  <img class="subtitle-bg" height="120" width="600" src="https://i.imgur.com/Za7U9GW.png" alt="Brush Stroke Png"></img>
+                  <div class='subtitle-text'>
+                    <p>reviews</p>
+                  </div>
+                </div>
+                <div class='block-content'>
+                  <p>The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate 
+styles.</p>
+                </div>
+              </div>
+              <hr id="gallery"></hr>
+              <div class='marko-main-block' id="block-5">
+                <div class="block-subtitle">
+                  <img class="subtitle-bg" height="120" width="600" src="https://i.imgur.com/Za7U9GW.png" alt="Brush Stroke Png"></img>
+                  <div class='subtitle-text'>
+                    <p>gallery</p>
+                  </div>
+                </div>
+                <div class='block-content'>
+                <p>The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate 
+styles.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='marko-footer'>
+            <p>Belgrade, Serbia</p>
+          </div>
+          <div class='btn-back'>
+            <a href="#">
+              <div class='circle-bg'>
+                <div class='ball-img-wrapper'>
+                  <img width="110" height="110" src="https://i.imgur.com/ErWt8Zy.png"/>
+                </div>
+                <div class='btn-text-bg'><p>up</p></div>
+                <div class='btn-text'><span>up</span></div>
+              </div>
+            </a>
+          </div>
+          <div class='btn-whatsapp'>
+            <a href="#">
+              <div class='circle-bg'>
+                <div class='whatsapp-icon-wrapper'>
+                </div>
+                <div class='btn-text'><i class="fa fa-brands fa-whatsapp fa-2x"></i></div>
+              </div>
+            </a>
+          </div>
+          <div class='game hidden'>
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+          </div>
         </div>
-        <p class="paragraph">Emmet помогает мне писать верстку</p>
-    </main>
-</body>
+
+
+        <script src="https://kit.fontawesome.com/fbf738dbff.js" crossorigin="anonymous"></script>
+        <!-- <script>
+        var canvas;
+        var canvasContext;
+        var ballX = 50;
+        var ballY = 50;
+        var ballSpeedX = 10;
+        var ballSpeedY = 4;
+        
+        var player1Score = 0;
+        var player2Score = 0;
+        const WINNING_SCORE = 3;
+        
+        var showingWinScreen = false;
+        
+        var paddle1Y = 250;
+        var paddle2Y = 250;
+        const PADDLE_THICKNESS = 10;
+        const PADDLE_HEIGHT = 100;
+        
+        function calculateMousePos(evt) {
+            var rect = canvas.getBoundingClientRect();
+            var root = document.documentElement;
+            var mouseX = evt.clientX - rect.left - root.scrollLeft;
+            var mouseY = evt.clientY - rect.top - root.scrollTop;
+            return {
+            x: mouseX,
+            y: mouseY
+            };
+        }
+        
+        function handleMouseClick(evt) {
+            if (showingWinScreen) {
+            player1Score = 0;
+            player2Score = 0;
+            showingWinScreen = false;
+            }
+        }
+        
+        window.onload = function() {
+            canvas = document.getElementById('gameCanvas');
+            canvasContext = canvas.getContext('2d');
+        
+            var framesPerSecond = 30;
+            setInterval(function() {
+            moveEverything();
+            drawEverything();
+            }, 1000 / framesPerSecond);
+        
+            canvas.addEventListener('mousedown', handleMouseClick);
+        
+            canvas.addEventListener('mousemove',
+            function(evt) {
+                var mousePos = calculateMousePos(evt);
+                paddle1Y = mousePos.y - (PADDLE_HEIGHT / 2);
+            });
+        }
+        
+        function ballReset() {
+            if (player1Score >= WINNING_SCORE ||
+            player2Score >= WINNING_SCORE) {
+            showingWinScreen = true;
+        
+            }
+        
+            ballSpeedX = -ballSpeedX;
+            ballX = canvas.width / 2;
+            ballY = canvas.height / 2;
+        }
+        
+        function computerMovement() {
+            var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT / 2);
+            if (paddle2YCenter < ballY - 35) {
+            paddle2Y = paddle2Y + 6;
+            } else if (paddle2YCenter > ballY + 35) {
+            paddle2Y = paddle2Y - 6;
+            }
+        }
+        
+        function moveEverything() {
+            if (showingWinScreen) {
+            return;
+            }
+        
+        computerMovement();
+    
+        ballX = ballX + ballSpeedX;
+        ballY = ballY + ballSpeedY;
+    
+        if (ballX < 0) {
+            if (ballY > paddle1Y &&
+            ballY < paddle1Y + PADDLE_HEIGHT) {
+            ballSpeedX = -ballSpeedX;
+    
+            var deltaY = ballY - (paddle1Y + PADDLE_HEIGHT / 2);
+            ballSpeedY = deltaY * 0.35;
+            } else {
+            player2Score++; // must be BEFORE ballReset()
+            ballReset();
+            }
+        }
+        if (ballX > canvas.width) {
+            if (ballY > paddle2Y &&
+                ballY < paddle2Y + PADDLE_HEIGHT) {
+                ballSpeedX = -ballSpeedX;
+        
+                var deltaY = ballY - (paddle2Y + PADDLE_HEIGHT / 2);
+                ballSpeedY = deltaY * 0.35;
+            } else {
+                player1Score++; // must be BEFORE ballReset()
+                ballReset();
+            }
+            }
+            if (ballY < 0) {
+            ballSpeedY = -ballSpeedY;
+            }
+            if (ballY > canvas.height) {
+            ballSpeedY = -ballSpeedY;
+            }
+        }
+        
+        function drawNet() {
+            for(var i=0; i < canvas.height; i+=40) {
+            colorRect(canvas.width/2-1,i,2,20, 'white');
+            }
+        }
+        
+        function drawEverything() {
+            // next line blanks out the screen with black
+            colorRect(0, 0, canvas.width, canvas.height, 'green');
+        
+            if (showingWinScreen) {
+            canvasContext.fillStyle = 'white';
+        
+            if (player1Score >= WINNING_SCORE) {
+                canvasContext.fillText("Left Player Won!", 350, 200);
+            } else if (player2Score >= WINNING_SCORE) {
+                canvasContext.fillText("Right Player Won!", 350, 200);
+            }
+            canvasContext.fillText("click to continue", 350, 500);
+            return;
+            }
+            
+            drawNet();
+            // this is left player paddle
+            colorRect(0, paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGHT, 'white');
+        
+            // this is right computer paddle
+            colorRect(canvas.width - PADDLE_THICKNESS, paddle2Y, PADDLE_THICKNESS, PADDLE_HEIGHT, 'white');
+        
+            // next line draws the ball
+            colorCircle(ballX, ballY, 10, 'white');
+        
+            canvasContext.fillText(player1Score, 100, 100);
+            canvasContext.fillText(player2Score, canvas.width - 100, 100);
+        }
+        
+        function colorCircle(centerX, centerY, radius, drawColor) {
+            canvasContext.fillStyle = drawColor;
+            canvasContext.beginPath();
+            canvasContext.arc(centerX, centerY, radius, 0, Math.PI * 2, true);
+            canvasContext.fill();
+        }
+        
+        function colorRect(leftX, topY, width, height, drawColor) {
+            canvasContext.fillStyle = drawColor;
+            canvasContext.fillRect(leftX, topY, width, height);
+        }
+        </script>   -->
+    </body>
 </html>
