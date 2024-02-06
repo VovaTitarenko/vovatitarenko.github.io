@@ -95,6 +95,10 @@ display: inline-flex;
 margin-left: 20px;
 }
 
+.marko-tennis nav i, a {
+    color: #c0a869;
+}
+
 .marko-tennis .nav-item {
 display: inline-block;
 margin-left: 40px;
@@ -118,9 +122,9 @@ border-radius: 50%; */
 }
 
 /*розовые границы div*/
-.marko-tennis div, header {
+/*.marko-tennis div, header {
 border: 2px solid pink;
-}
+}*/
 
 .marko-tennis .marko-main {
 position: relative;
